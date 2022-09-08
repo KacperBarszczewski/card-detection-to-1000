@@ -125,12 +125,12 @@ while cam_quit == 0:
     frame_rate_calc = 1/time1
 
     # Poll the keyboard. If 'q' is pressed, exit the main loop.
-    #key = cv2.waitKey(1) & 0xFF
-    #if key == ord("q"):
-    #   cam_quit = 1
+    key = cv2.waitKey(1) & 0xFF
+    if key == ord("q"):
+      cam_quit = 1
 
 
 # Close all windows and close the PiCamera video stream.
-#cv2.destroyAllWindows()
+cv2.destroyAllWindows()
 
 # B#videostream.stop()
